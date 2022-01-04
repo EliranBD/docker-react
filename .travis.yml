@@ -4,8 +4,8 @@ services:
   -docker
 
 before_install:
-  - docker build -t EliranBD/docker-react -f Dockerfile.dev .
+  - docker build -t eliranbd/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true EliranBD/docker-react npm run test
+  - docker run -e CI=true eliranbd/docker-react npm run test
 
